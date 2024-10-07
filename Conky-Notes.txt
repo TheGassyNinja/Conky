@@ -1,0 +1,33 @@
+# Conky-Notes 
+
+# Fonts: Hack Nerd Font, Urban Starblues Demo, Scout-Regular, Cyberway Riders,
+
+
+# Dir Struct
+
+conky-clean/
+            conky-min.sh 
+                         > /modules/min-date.conf
+                         > /modules/min-weather.conf
+
+            conky-main.sh 
+                         > /modules/min-date.conf
+                         > /modules/min-weather.conf
+                         > /modules/min-youtube.conf
+
+            conky-mid.sh
+                         > /modules ...             # TODO
+                         > /modules ...             # TODO
+                         > /modules ...             # TODO
+
+
+            conky-sys.sh
+                         > /modules ...             # TODO
+                         > /modules ...             # TODO
+                         > /modules ...             # TODO
+            
+            
+            conky-rss.sh
+                         > /modules ...             # TODO
+                         > /modules ...             # TODO
+                         > /modules ...             # TODO

@@ -1,0 +1,10 @@
+conky: desktop window (0x394) is root window
+conky: window type - override
+conky: drawing to created window (0x2000001)
+conky: drawing to double buffer
+conky: Unknown setting 'maximum_height'
+conky: Unknown setting 'out_to_wayland'
+conky: FOUND: console
+conky: FOUND: ncurses
+conky: FOUND: file
+conky: FOUND: x11
