@@ -1,15 +1,16 @@
 #!/bin/bash
-set -x
+# set -x
 export DISPLAY=:0
-DIR="$(pwd)"		
+DIR="$HOME/.config/Conky"		
 MODS="$DIR/modules"		
-M1="$MODS/min-date.conf"       #
-M2="$MODS/min-weather.conf"    #
-M3="$MODS/min-sys.conf"        #
-M4="$MODS/net-all.conf"        #
-M5="$MODS/net-up.conf"         #
-M6="$MODS/net-dn.conf"         #
-M7="$MODS/min-youtube.conf"    #
+ M1="$MODS/min-date.conf"       #
+ M2="$MODS/min-weather.conf"    #
+# M3="$MODS/min-sys.conf"        #
+# M4="$MODS/net-all.conf"        #
+# M5="$MODS/net-up.conf"         #
+# M6="$MODS/net-dn.conf"         #
+# M7="$MODS/min-youtube.conf"    #
+ M8="$MODS/bspwm-music.conf"
 
 # # Set Theme
 ###################################
@@ -17,8 +18,9 @@ M7="$MODS/min-youtube.conf"    #
    wal="$HOME/.cache/wal/colors" 
    cp $wal $DIR/colors/Wal
 # Set Wallpaper / Uncomment the following 2 lines
-      WALLPAPER="$DIR/Wallpapers/Gold-Brown-Anime.jpg"
-      feh --bg-fill $WALLPAPER
+#      WALLPAPER="$DIR/Wallpapers/Gold-Brown-Anime.jpg"
+#      feh --bg-fill $WALLPAPER
+
 ######
 THEME="Wal"
 ######
@@ -54,14 +56,13 @@ if pgrep -x "conky" > /dev/null
 then
     pkill conky
     sleep 0.5
-    conky -c $M2 &> $DIR/testing.log &
-    sleep 1
+    conky -c $M8 &> $DIR/testing.log &
     conky -c $M1 &> $DIR/testing.log &
+    sleep 1
 else
-    conky -c $M2 &> $DIR/testing.log &
-    sleep 1
+    conky -c $M8 &> $DIR/testing.log &
     conky -c $M1 &> $DIR/testing.log &
+    sleep 1
 fi
-
 
 exit
